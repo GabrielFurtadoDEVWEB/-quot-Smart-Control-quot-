@@ -1,1 +1,40 @@
 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Porta de Entrada</title>
+</head>
+<body>
+    <form method="get" action="dashboard.html">
+
+        <label for="Nome">Nome Completo:</label>
+        <input type="text" name="Nome" id="Nome" required>
+        
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email" required>
+        
+        <label for="senha">senha:</label>
+        <input type="password" name="senha" id="senha" required>
+
+        <label for="senha2">Confirme senha:</label>
+        <input type="password" name="senha2" id="senha2" required>
+
+        <label for="Nivel">Selecione cargo</label>
+        <select name="Nivel de Acesso" id="Nivel" required>
+            <option value="" selected>Selecione</option>
+            <option>Estagiário</option>
+            <option>Junior</option>
+            <option>Pleno</option>
+            <option>Sênior</option>
+        </select>
+
+        <label for="Termos">Li e aceito os termos de uso.</label>
+        <input type="checkbox" name="Termos" id="Termos">
+
+        
+        <button type="submit">Criar</button>
+    </form>
+</body>
+</html>
