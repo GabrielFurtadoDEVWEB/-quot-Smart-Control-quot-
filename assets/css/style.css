@@ -27,10 +27,8 @@ body::before{
 
 /* Logo */
 .logo-caixa {
-    width: 90px;
-    height: 90px;
-    border-radius: 25%;
-    background: #fff;
+    width: 40px;
+    height: 40px;
     padding: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,.3);
     margin: 0 auto 20px auto; /* Centraliza horizontalmente e empurra o "Login" para baixo */
