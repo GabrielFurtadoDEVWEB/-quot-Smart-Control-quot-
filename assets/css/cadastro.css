@@ -27,6 +27,7 @@ body::before{
 
 
 img{
+    position: absolute;
     width: 90px;
     height: 90px;
     border-radius: 25%;
