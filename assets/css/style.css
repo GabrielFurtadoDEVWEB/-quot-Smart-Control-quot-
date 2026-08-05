@@ -26,23 +26,20 @@ body::before{
 }
 
 /* Logo */
-header{
-    position: absolute;
-    top: 100px;
-    z-index: 2;
-}
-
-header img{
+.logo-caixa {
     width: 90px;
     height: 90px;
     border-radius: 25%;
     background: #fff;
     padding: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,.3);
+    margin: 0 auto 20px auto; /* Centraliza horizontalmente e empurra o "Login" para baixo */
+    display: block;
 }
 
 /* Caixa principal */
-form:first-of-type{
+form:first-of-type::before{
+    content: "Login";
     position: relative;
     z-index: 2;
     width: 420px;
