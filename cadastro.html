@@ -8,44 +8,57 @@
     <link rel="stylesheet" href="assets/css/cadastro.css">
 </head>
 <body>
-
-    <form method="get" action="dashboard.html">
-
+    
+    <div class="login-container">
         <img src="assets/Images/Logo.png" alt="logo Smart Control" width="50">
+    <h2>Cadastro</h2>
+ 
+        <form method="get" action="dashboard.html">
+            <div class="input-group">
+                <label for="Nome">Nome Completo</label>
+                <input type="text" name="Nome" id="Nome" required placeholder="Digite seu nome completo">
+            </div>
+ 
+            <div class="input-group">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" required placeholder="Digite seu e-mail">
+            </div>
+ 
+            <div class="input-group">
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha" minlength="8" required placeholder="Digite sua senha">
+            </div>
+ 
+            <div class="input-group">
+                <label for="senha2">Confirme a senha</label>
+                <input type="password" name="senha2" id="senha2" minlength="8" required placeholder="Confirme sua senha">
+            </div>
+ 
+            <div class="input-group">
+                <label for="Nivel">Cargo</label>
+                <select name="Nivel de Acesso" id="Nivel" required>
+                    <option value="" selected disabled>Selecione</option>
+                    <option>Estagiário</option>
+                    <option>Junior</option>
+                    <option>Pleno</option>
+                    <option>Sênior</option>
+                </select>
+            </div>
+ 
+            <div class="input-group checkbox-group">
+                <input type="checkbox" name="Termos" id="Termos" required>
+                <label for="Termos">Li e aceito os termos de uso.</label>
+            </div>
+ 
+            <button type="submit" class="btn-entrar">Criar</button>
+        </form>
+ 
+        <form method="get" action="index.html">
+             <button type="submit" class="btn-cadastrar">Voltar</button>
+        </form>
+    </div>
+ 
 
-        <label for="Nome">Nome Completo:</label>
-        <input type="text" name="Nome" id="Nome" required>
-        
-        <label for="email">E-mail:</label>
-        <input type="email" name="email" id="email" required>
-        
-        <label for="senha">senha:</label>
-        <input type="password" name="senha" id="senha" minlength=8 required>
-
-        <label for="senha2">Confirme senha:</label>
-        <input type="password" name="senha2" id="senha2" minlength=8 required>
-
-        <label for="Nivel">Selecione cargo</label>
-        <select name="Nivel de Acesso" id="Nivel" required>
-            <option value="" selected>Selecione</option>
-            <option>Estagiário</option>
-            <option>Junior</option>
-            <option>Pleno</option>
-            <option>Sênior</option>
-        </select>
-
-        <label for="Termos">Li e aceito os termos de uso.</label>
-        <input type="checkbox" name="Termos" id="Termos" required>
-
-        
-        <button type="submit">Criar</button>
-    </form>
-
-    <form method="get" action="index.html">
-        <button type="submit">Voltar</button>
-    </form>
-
-<main>
     <footer>
 
         <iframe
